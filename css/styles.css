@@ -1,0 +1,665 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: whitesmoke;
+    font-family: sans-serif;
+}
+
+.logoimg{
+    width: 280px;
+    height: 80px;
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+    background-color:#202022;
+    justify-content: space-around;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+}
+.main-menu {
+    margin-bottom: 0;
+}
+.main-menu li {
+    list-style: none;
+    font-size: 17px;
+    display: inline;
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+
+.main-menu li a{
+    color: white;
+    text-decoration:none;
+}
+.main-menu a:hover {
+    text-decoration: underline;
+}
+
+.nav .registrarse button{
+    background-color: #12426B;
+    border: none;
+}
+
+.nav .registrarse button:hover{
+    background-color: #202022;
+}
+.nav .registrarse a{
+    color: white;
+    text-decoration: none;
+}
+
+.cta-text{
+    font-size: 18px;
+    color: #3d3c3c;
+    margin-top:15px;
+    margin-bottom: 10px;
+}
+
+.sec-home{
+    display: flex;
+    width: 100%;
+    padding: 3rem;
+    max-width: 992px;
+    margin: auto;
+    align-items: center;
+    margin: auto;
+}
+
+.sec-home .home-cta .home-title {
+    font-size: 32px;
+    width: 10px;
+    margin-bottom: 10px;
+}
+.sec-home .home-img img {
+    width: 350px;
+    height: 400px;
+    margin-top: 8px;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.sec-home .home-img :hover {
+    opacity: 0.7;
+}
+
+.sec-empresa{
+    width: 100%;
+    padding: 3rem;
+    max-width: 992px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec-empresa .intro .h2-empresa{
+    font-size: 29px;
+    text-align: center;
+}
+
+.sec-empresa .intro .p-empresa{
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.features .image img{
+    width: 400px;
+    height: 450px;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+.sec-empresa .features{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.sec-empresa .features .texto{
+    flex: 1;
+    padding: 2rem 0;
+}
+
+.sec-empresa .features .texto .feature{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px;
+}
+
+.sec-empresa .features .texto .feature .description{
+    max-width: 20rem;
+    margin-left: 1rem;
+}
+
+.sec-empresa .features .texto .feature .description .description-title{
+    font-size: 1.17rem;
+}
+
+.sec-empresa .features .texto .feature .description .description-text{
+    font-size: 1rem;
+}
+
+.texto .icono-sm {
+    font-size: 00.75rem;
+    padding: 0.4rem 0.65rem;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00000055;
+}
+
+.image :hover{
+    opacity: 0.7;
+}
+
+.imagen-carru img{
+    width: 100%;
+}
+
+.productosnove .title-novedades{
+    margin-top: 20px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.productosnove .sub-novedades{
+    font-size: 18px;
+    margin: 10px;
+    text-align: center;
+}
+
+.contenedor-targetas{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.targeta{
+    width: 280px;
+    border: 1px solid #a9a9b2 ;
+    margin: 30px;
+    border-radius: 5px;
+    box-shadow: 7px 13px 37px #000 ;
+}
+
+.targeta .card-title{
+    text-align: center;
+}
+
+.titulo-nutri{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.img-nutri img{
+    width: 100%;
+}
+
+.contenedor-targetas-nutri{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+
+.contenedor-targetas-ali{
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.alisados{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.text-alisados h1{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+}
+
+.text-alisados p{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+.tipo-cabello{
+    margin: 10px;
+    width: 450px;
+}
+
+.tipo-cabello img{
+    width: 450px;
+    border-radius: 8px;
+    height: 315px;
+}
+
+.tipo-cabello h3{
+    text-align:center;
+    padding: 9px;
+}
+
+
+.contenedor-escribinos{
+    background-color: #ebecedf9;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contenedor-escribinos .text-escribinos p{
+    margin: 0;
+}
+
+
+.protectoresTermicos h1{
+    font-size: 32px;
+    text-align: center;
+    margin-top: 35px;
+    padding: 10px;
+}
+
+.sec-protectores{
+    display: flex;
+    width: 100%;
+    max-width: 992px;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.sec-protectores .img-protectores img{
+    width: 350px;
+    border-radius: 10px;
+}
+
+.text-protectore{
+    padding: 15px;
+}
+.sec-protectores .text-protectore h2{
+    text-align: center;
+}
+
+.sec-protectores .text-protectore p{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-targetas-pro{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+
+.img-portada img{
+    width: 100%;
+    height: 500px;
+}
+
+.nosotros{
+    width: 70%;
+    margin: auto;
+}
+
+.nosotros-conteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.nosotros-conteiner .titulo-nosotros{
+    text-align: center;
+    font-size: 32px;
+    margin-top: 25px;
+    padding: 15px;
+}
+
+.nosotros-conteiner .text1 {
+    width: 100%;
+}
+
+.nosotros-conteiner .text1 p{
+    padding:10px 0;
+    font-size: 20px;
+}
+
+.formulario-sec{
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.formulario{
+    width: 700px;
+    background-color: #202022;
+    margin: auto;
+    display: grid;
+    padding: 20px;
+    border-radius: 15px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:    "contactanos contactanos"
+                            "nombre       email"
+                            "tel          asunto"
+                            "mensaje      mensaje"
+                            "boton        boton";
+}
+
+
+.formulario label{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 10px;
+}
+
+.formulario label input, .formulario label textarea{
+    background-color: #202022;
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 5px;
+    color: white;
+}
+
+.formulario button{
+    background-color: #12426B;
+    border: none;
+    width: 98%;
+    margin: auto;
+}
+
+.formulario h2{
+    grid-area: contactanos;
+    color: white;
+    padding: 10px;
+}
+
+.formulario label:nth-child(2){
+    grid-area:nombre;
+}
+.formulario label:nth-child(3){
+    grid-area:email;
+}
+.formulario label:nth-child(4){
+    grid-area:tel;
+}
+.formulario label:nth-child(5){
+    grid-area:asunto;
+}
+.formulario label:nth-child(6){
+    grid-area:mensaje;
+}
+.formulario button{
+    grid-area:boton;
+}
+
+@media(max-width:740px){
+    .formulario{
+        width: 95%;
+        background-color: #202022;
+        margin: auto;
+        display: grid;
+        border-radius: none;
+        grid-template-columns: 1fr ;
+        grid-template-areas:    "contactanos"
+                                "nombre"
+                                "email"
+                                "tel"
+                                "asunto"
+                                "mensaje "
+                                "boton";
+    }
+}
+
+
+#form {
+    background-image: url('../multimedia/NANO.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.form-register {
+    box-sizing: border-box;
+    width: 400px;
+    background: #202022;
+    padding: 40px;
+    margin-left: 100px;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color:white ;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.controls {
+    box-sizing: border-box;
+    width: 100%;
+    background: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1.5px solid #A6A6A6;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: #262626;
+}
+
+.form-register p {
+    height: 20px;
+    text-align: center;
+    font-size: 17px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.form-register a {
+    color: white;
+    text-decoration: none;
+}
+
+.form-register a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.form-register .botons {
+    width: 100%;
+    background: #12426B;
+    border: none ;
+    border-radius: 4px;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+
+.sec-benefits{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec-benefits .intro .h3-fea{
+    margin-top: 15px;
+    font-size: 32px;
+}
+
+.sec-benefits .intro .p-fea{
+    text-align: center;
+    font-size: 20px;
+}
+
+.benefit-cards{
+    width: 100%;
+    padding: 0 2rem 2rem 2rem;
+    text-align: center;
+    display: flex;
+}
+
+.benefit .icon {
+    font-size: 8.5rem;;
+}
+
+
+.sec-kpis {
+    background-color: #202022;
+    width: 100%;
+    color: white;
+    padding: 4rem;
+    display: flex;
+}
+.sec-kpis .kpi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.sec-kpis .number {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.sec-kpis .desc {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 250, 0.6666666667);
+}
+
+.sec-onboarding .intro h3{
+    text-align: center;
+    font-size: 32px;
+    margin-top: 15px;
+}
+
+.sec-onboarding .intro p{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.sec-onboarding .steps {
+    padding: 0 7rem 5rem 7rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+.sec-onboarding .steps .step-separador {
+    flex: 1;
+    border-top: 2px solid #ddd;
+    margin: 0 1rem;
+}
+
+.icon-desc {
+    font-size: 7.5rem;
+    text-align: center;
+}
+
+
+.met-pago i{
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+
+.met-pago h3{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+.img-pago {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-pago img{
+    width: 600px;
+    padding: 10px;
+}
+
+.separador-footer{
+    border: solid 0.1px #ddd;
+    width: 100%;
+}
+
+.sec-footer{
+    height: 270px;
+    background-color: #202022;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.redes-footer{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.redes-footer a{
+    color: white;
+    font-size: 25px;
+    padding: 25px;
+    margin-bottom: 10px;
+}
+.logo-footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo-footer img{
+    width: 350px;
+}
+
+.derechos{
+    width: 100%;
+    height: 100px;
+    background-color: #111010;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
