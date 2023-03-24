@@ -10,51 +10,70 @@ body{
     font-family: sans-serif;
 }
 
-.logoimg{
-    width: 280px;
-    height: 80px;
+
+.navbar-expand-lg{
+    background-color: #202022;
 }
 
-.nav{
-    width: 100%;
-    display: flex;
-    background-color:#202022;
-    justify-content: space-around;
-    width: 100%;
-    height: 80px;
-    align-items: center;
-}
-.main-menu {
-    margin-bottom: 0;
-}
-.main-menu li {
-    list-style: none;
-    font-size: 17px;
-    display: inline;
-    font-size: 1rem;
-    margin-right: 1rem;
+.navbar-brand img{
+    width: 250px;
+    height: 80px ;
 }
 
-.main-menu li a{
+.navbar-expand-lg ul li a{
     color: white;
-    text-decoration:none;
-}
-.main-menu a:hover {
-    text-decoration: underline;
 }
 
-.nav .registrarse button{
+.navbar-expand-lg ul li a:visited{
+    color: white;
+}
+
+.navbar-expand-lg ul li a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.dropdown-menu{
+    background-color: #111010;
+}
+
+.dropdown-menu .dropdown-item{
+    color: white;
+    background-color: #111010;
+}
+
+.dropdown-divider{
+    background-color: rgb(220, 220, 220);
+}
+
+.boton-intro button{
+    margin: 5px;
     background-color: #12426B;
     border: none;
 }
 
-.nav .registrarse button:hover{
+.boton-intro button:hover{
     background-color: #202022;
 }
-.nav .registrarse a{
-    color: white;
+
+.boton-intro button a{
     text-decoration: none;
+    color: white;
 }
+
+.navbar-toggler{
+    color: #12426B;
+    border: none;
+    background-color: #ddd;
+    font-size: 15px;
+}
+
+@media (max-width:350px){
+    .navbar-brand img{
+        width: 200px;
+    }
+}
+
 
 .cta-text{
     font-size: 18px;
@@ -167,23 +186,15 @@ body{
 }
 
 .productosnove .title-novedades{
-    margin-top: 20px;
-    font-size: 32px;
-    text-align: center;
+    font-size: 30px;
 }
 
 .productosnove .sub-novedades{
     font-size: 18px;
-    margin: 10px;
-    text-align: center;
 }
 
 .contenedor-targetas{
     width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
 }
 
 .targeta{
@@ -196,6 +207,17 @@ body{
 
 .targeta .card-title{
     text-align: center;
+    margin-bottom: 15px;
+}
+
+.targeta .card-text{
+    margin-bottom: 15px;
+}
+
+@media(max-width:400px){
+    .contenedor-targetas{
+        width: 95%;
+    }
 }
 
 .titulo-nutri{
@@ -204,27 +226,6 @@ body{
     text-align: center;
 }
 
-.img-nutri img{
-    width: 100%;
-}
-
-.contenedor-targetas-nutri{
-    width: 60%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
-}
-
-
-.contenedor-targetas-ali{
-    width: 85%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
-    margin-top: 40px;
-}
 
 .alisados{
     display: flex;
@@ -263,18 +264,40 @@ body{
     padding: 9px;
 }
 
-
-.contenedor-escribinos{
+.Escribinos{
     background-color: #ebecedf9;
-    width: 100%;
-    height: 200px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    margin-top: 50px;
 }
 
-.contenedor-escribinos .text-escribinos p{
-    margin: 0;
+
+.contenedor-escribinos{
+    height: 250px;
+}
+
+@media(max-width:770px){
+    .contenedor-escribinos{
+        flex-direction: column;
+    }
+    .text-escribinos{
+        text-align: center;
+    }
+}
+
+
+.boton-escribinos button{
+    display: flex;
+    flex-direction: column;
+    background-color: #12426B;
+    border: none;
+}
+
+.boton-escribinos button a{
+    text-decoration: none;
+    color: white;
+}
+
+.boton-escribinos button:hover{
+    background-color:#1d65a5 ;
 }
 
 
@@ -309,25 +332,21 @@ body{
 
 .sec-protectores .text-protectore p{
     text-align: center;
-    justify-content: center;
-    align-items: center;
 }
 
-.contenedor-targetas-pro{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
-    padding: 15px;
-    margin-top: 20px;
+@media(max-width:900px){
+    .sec-protectores{
+        flex-direction: column;
+    }
+    .sec-protectores .img-protectores img{
+        width: 300px;
+    }
+    .sec-protectores .text-protectore{
+        width:70%;
+        margin-top: 25px;
+    }
 }
 
-
-.img-portada img{
-    width: 100%;
-    height: 500px;
-}
 
 .nosotros{
     width: 70%;
@@ -445,21 +464,31 @@ body{
 }
 
 
-#form {
+#form-1{
     background-image: url('../multimedia/NANO.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    position: relative;
+    padding-bottom: 7rem;
+}
+
+#form-2{
+    background-image: url('../multimedia/NANO.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 15rem;
 }
 
 .form-register {
-    box-sizing: border-box;
-    width: 400px;
+    max-width: 400px;
+    width: 90%;
     background: #202022;
     padding: 40px;
-    margin-left: 100px;
-    margin-top: 100px;
-    border-radius: 4px;
+    margin: 20px;
+    border-radius: 9px;
     font-family: 'calibri';
     color:white ;
     box-shadow: 7px 13px 37px #000;
@@ -471,7 +500,6 @@ body{
 }
 
 .controls {
-    box-sizing: border-box;
     width: 100%;
     background: white;
     padding: 10px;
@@ -484,11 +512,10 @@ body{
 }
 
 .form-register p {
-    height: 20px;
     text-align: center;
     font-size: 17px;
-    line-height: 40px;
-    margin-bottom: 20px;
+    line-height: 30px;
+    margin-bottom: 8px;
 }
 
 .form-register a {
@@ -511,7 +538,6 @@ body{
     margin: 16px 0;
     font-size: 16px;
 }
-
 
 .sec-benefits{
     display: flex;
@@ -617,24 +643,41 @@ body{
     padding: 10px;
 }
 
+
+.target-pie{
+    width: 100%;
+    display: flex;
+}
+
+.target-pie .text-bg-dark{
+    margin: 15px;
+    width: 50%;
+    border: none;
+}
+
+
+.target-pie .text-bg-dark .card-img-overlay{
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+
 .separador-footer{
     border: solid 0.1px #ddd;
     width: 100%;
 }
 
+
 .sec-footer{
     height: 270px;
     background-color: #202022;
     width: 100%;
-    display: flex;
-    flex-direction: column;
 }
 
 .redes-footer{
     list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-decoration: none;
 }
 
@@ -644,14 +687,14 @@ body{
     padding: 25px;
     margin-bottom: 10px;
 }
+
 .logo-footer {
-    display: flex;
-    justify-content: center;
     width: 100%;
+    margin-top: 15px;
 }
 
 .logo-footer img{
-    width: 350px;
+    width: 320px;
 }
 
 .derechos{
@@ -659,7 +702,30 @@ body{
     height: 100px;
     background-color: #111010;
     text-align: center;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+}
+
+.derechos-register{
+    width: 100%;
+    height: 100px;
+    background-color: #111010;
+    position: fixed;
+    bottom: 0;
+}
+
+.derechos-register p{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.derechos-register-r{
+    width: 100%;
+    height: 100px;
+    background-color: #111010;
+    position: fixed;
+    bottom: 0;
+}
+
+.derechos-register-r p{
+    text-align: center;
+    margin-top: 30px;
 }
