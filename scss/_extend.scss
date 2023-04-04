@@ -1,0 +1,14 @@
+@import "variables";
+
+%btn{
+    margin: 5px;
+    background-color: $color-blue;
+    border: none;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    &:hover{
+        background-color: $color-general;
+    }
+}

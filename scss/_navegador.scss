@@ -1,0 +1,57 @@
+@import "variables";
+@import "extend";
+
+.navbar-expand-lg{
+    background-color:$color-general;
+    .navbar-brand{
+        img{
+            width: 250px;
+            height: 80px ;
+        }
+    }
+    ul {
+        li a{
+            color: white;
+            &:visited{
+                color: white;
+            }
+            &:hover{
+                text-decoration: underline;
+                color: white;
+            }
+        }
+    }
+    
+}
+
+.dropdown-menu{
+    background-color: #111010;
+    .dropdown-item{
+        color: white;
+        background-color: #111010;
+    }
+    .dropdown-divider{
+        background-color: rgb(220, 220, 220);
+    }
+}
+
+.boton-intro{
+    button{
+        @extend %btn;
+    }
+}
+
+.navbar-toggler{
+    color: $color-blue;
+    border: none;
+    background-color: #ddd;
+    font-size: 15px;
+}
+
+@media (max-width:350px){
+    .navbar-expand-lg{
+        .navbar-brand img{
+            width: 200px;
+        }
+    }
+}

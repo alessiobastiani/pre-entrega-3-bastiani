@@ -1,0 +1,8 @@
+@mixin body($position,$tamano){
+    background-image: url('../multimedia/NANO.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: $position;
+    padding-bottom: $tamano;
+}

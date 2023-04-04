@@ -1,0 +1,60 @@
+
+@import "variables";
+
+.separador-footer{
+    border: solid 0.1px #ddd;
+    width: 100%;
+}
+
+.sec-footer{
+    height: 270px;
+    background-color:$color-general;
+    width: 100%;
+    .redes-footer{
+        list-style: none;
+        text-decoration: none;
+        a{
+            color: white;
+            font-size: 25px;
+            padding: 25px;
+            margin-bottom: 10px;
+        }
+    }
+    .logo-footer {
+        width: 100%;
+        margin-top: 15px;
+        img{
+            width: 320px;
+        }
+    }
+    .derechos{
+        width: 100%;
+        height: 100px;
+        background-color: #111010;
+        text-align: center;
+    }
+}
+
+.derechos-register{
+    width: 100%;
+    height: 100px;
+    background-color: #111010;
+    position: fixed;
+    bottom: 0;
+    p{
+        text-align: center;
+        margin-top: 30px;
+    }
+}
+
+.derechos-register-r{
+    width: 100%;
+    height: 100px;
+    background-color: #111010;
+    position: fixed;
+    bottom: 0;
+    p{
+        text-align: center;
+        margin-top: 30px;
+    }
+}
